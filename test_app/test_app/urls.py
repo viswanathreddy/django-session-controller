@@ -16,12 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-from .views import test_view
+from session_controller.views import IndexView
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', test_view, name="test_view"),
+    url(r'^$', IndexView.as_view(), name="index"),
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^admin/', admin.site.urls)
