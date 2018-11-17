@@ -3,10 +3,11 @@ from django.dispatch import receiver
 from django.conf import settings
 from .models import SessionStore
 from django.core.exceptions import ObjectDoesNotExist
+from importlib import import_module
 
 @receiver(user_logged_in)
 def _user_logged_in(sender, user, request, **kwargs):
-    SessionStore.objects.create(user=user, session_key=request.session.session_key)
+    return
 
 @receiver(user_logged_out)
 def _user_logged_out(sender, user, request, **kwargs):
