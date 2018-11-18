@@ -1,5 +1,5 @@
-=============================
-    django-session-controller
+
+django-session-controller : A Configurable Session Controller
 =============================
 
 Controls number of Django Sessions can be created for a user.
