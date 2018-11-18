@@ -7,7 +7,7 @@ Django session controller controls the number of sessions a user can hold in app
 Features:
 ---------
 - Can be configurable to restrict no of sessions on the whole application.
-- Can be configurable to restrict no of sessions on a perticular view.
+- Can be configurable to restrict no of sessions on a particular view.
 - Can be configurable to restrict no of sessions for each user.
 - Can monitor present user sessions
 
