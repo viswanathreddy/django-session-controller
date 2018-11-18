@@ -24,7 +24,7 @@ How to use :
 1. Add django-session-controller to your Django project's settings module:
 
 
-``` {.sourceCode .python}
+``` {.sourceCode .py}
     INSTALLED_APPS = [
         ...
         'django-session-controller',
