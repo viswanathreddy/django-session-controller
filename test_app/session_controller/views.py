@@ -9,7 +9,6 @@ from .session_decorators import unique_session
 from django.views import View
 from django.contrib.auth.decorators import login_required
 
-# @unique_session
 class IndexView(LoginRequiredMixin, ListView):
 
     model = UserSessionStore
@@ -21,6 +20,23 @@ class IndexView(LoginRequiredMixin, ListView):
         # import pdb;pdb.set_trace()
         sessions = UserSessionStore.objects.filter(user=request.user).order_by("-created_at")
         return render(request, self.template_name, {"object_list": sessions})
+
+
+class UnControlledView(LoginRequiredMixin, ListView):
+
+    model = UserSessionStore
+    template_name = 'index.html'
+
+    def get(self, request, *args, **kwargs):
+        print("uncontrolled view called")
+        # import pdb;pdb.set_trace()
+        sessions = UserSessionStore.objects.filter(user=request.user).order_by("-created_at")
+        return render(request, self.template_name, {"object_list": sessions})
+
+def sample_view(request):
+    print("sample view")
+    return HttpResponse("sample view")
+
 
 # @login_required
 # @unique_session

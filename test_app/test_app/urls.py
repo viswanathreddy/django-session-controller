@@ -16,13 +16,15 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-from session_controller.views import IndexView
+from session_controller.views import UnControlledView, IndexView, sample_view
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', IndexView.as_view(), name="index"),
+    url(r'^controlled_view$', IndexView.as_view(), name="index"),
+    url(r'^uncontrolled_view$', UnControlledView.as_view(), name="uncontrolled_view"),
+    url(r'^sample_view$', sample_view, name="sample_view"),
+    url(r'^$', sample_view, name="sample_view"),
     url(r'^login/$', auth_views.login, name='login'),
-    url(r'^logout/$', auth_views.logout, name='logout'),
-    url(r'^admin/', admin.site.urls)
+    url(r'^logout/$', auth_views.logout, name='logout')
 ]
