@@ -39,13 +39,14 @@ How to use :
 ```
 2. Apply the carrot migrations to your project's database:
 
-.. code-block:: python
+``` {.sourceCode .py}
 
     python manage.py migrate django-session-controller
-    
+
+```
 3.Put the below code to your Django project's settings module inorder to configure:
 
-.. code-block:: python
+``` {.sourceCode .py}
    
      #Restrict sessions
     SESSION_CONTROL_CONFIG = {
@@ -54,17 +55,20 @@ How to use :
         'SESSION_CONTROL_USER_LEVEL': True,# to control no of sessions for each user
         'SESSION_CONTROL_VIEW_LEVEL': True #control session at View level
     }
+```
+
 4.Use "@unique_session" decorator on view method to impose session restriction.
-.. code-block:: python
+``` {.sourceCode .py}
     
     from django_session_controller.session_decorators import unique_session
     class IndexView(LoginRequiredMixin, ListView):
         @unique_session
         def get(self, request, *args, **kwargs):
             pass
+```
 5.To make you session monitoring system use the model 'UserSessionStore'.
-.. code-block:: python
+``` {.sourceCode .py}
 
     from django_session_controller.models import UserSessionStore
-    
+```
 
