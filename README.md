@@ -23,7 +23,7 @@ How to use :
 ==================================
 1. Add django-session-controller to your Django project's settings module:
 
-.. code-block:: python
+
 
     INSTALLED_APPS = [
         ...
