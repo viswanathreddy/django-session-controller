@@ -1,4 +1,4 @@
-`
+
 from django.conf import settings
 from .models import UserSessionStore
 from importlib import import_module
