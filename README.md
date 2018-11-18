@@ -2,7 +2,7 @@
 django-session-controller : A Configurable Session Controller
 =============================
 
-Controls number of Django Sessions can be created for a user.
+Django session controller controls the number of sessions a user can hold in application life cycle . Admin/Staff user can configure number of active user sessions at the app level or at the view level.
 
 Features:
 ---------
@@ -71,6 +71,17 @@ How to use :
 
     from django_session_controller.models import UserSessionStore
 ```
+
+Future Works :
+--------------
+- Support for token based Auth system
+- Manage the session restriction on User group level
+- A better session monitoring for admins
+
+## Contributors
+- [Naveen](https://github.com/naveen-varshney)
+- [Sibasish](https://github.com/Sibasish1992)
+- [Viswanath](https://github.com/viswanathreddy)
 
 License
 -------
