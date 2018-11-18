@@ -5,14 +5,14 @@ django-session-controller : A Configurable Session Controller
 Controls number of Django Sessions can be created for a user.
 
 Features:
-==============================
+---------
 - Can be configurable to restrict no of sessions on the whole application.
 - Can be configurable to restrict no of sessions on a perticular view.
 - Can be configurable to restrict no of sessions for each user.
 - Can monitor present user sessions
 
 How To Install:
-===============================
+---------------
 To install **django-session-controller** simply use pip :
 
 ``` {.sourceCode .bash}
@@ -20,7 +20,7 @@ $ pip install django-session-controller
 
 ```
 How to use :
-==================================
+------------
 1. Add **django-session-controller** to your Django project's settings module:
 
 
