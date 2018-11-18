@@ -51,7 +51,7 @@ How to use :
      #Restrict sessions
     SESSION_CONTROL_CONFIG = {
         'SESSION_CONTROL_APP_LEVEL': True, # to control no of sessions on App level
-        'MAX_SESSION_CNT' : 2, # to control no of concurrent sessions 
+        'MAX_SESSION_CNT' : 2, # to control no of concurrent sessions for any user
         'SESSION_CONTROL_USER_LEVEL': True,# to control no of sessions for each user
         'SESSION_CONTROL_VIEW_LEVEL': True #control session at View level
     }
