@@ -24,7 +24,7 @@ How to use :
 1. Add django-session-controller to your Django project's settings module:
 
 
-
+``` {.sourceCode .python}
     INSTALLED_APPS = [
         ...
         'django-session-controller',
@@ -36,6 +36,7 @@ How to use :
         'django-session-controller.middleware.SessionController',
         ...
     ]
+```
 2. Apply the carrot migrations to your project's database:
 
 .. code-block:: python
