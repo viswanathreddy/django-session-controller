@@ -1,5 +1,5 @@
 
-django-session-controller : A Configurable Session Controller
+django-session-controller : A Configurable Session Controller  🔍🕵🏻
 =============================
 
 Django session controller controls the number of sessions a user can hold in application life cycle . Admin/Staff user can configure number of active user sessions at the app level or at the view level.
