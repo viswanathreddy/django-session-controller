@@ -72,3 +72,8 @@ How to use :
     from django_session_controller.models import UserSessionStore
 ```
 
+License
+-------
+
+The project is licensed under the MIT license.
+
