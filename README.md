@@ -9,7 +9,7 @@ Features:
 - Can be configurable to restrict no of sessions on the whole application.
 - Can be configurable to restrict no of sessions on a particular view.
 - Can be configurable to restrict no of sessions for each user.
-- Can monitor present user sessions
+- Can audit present user sessions
 
 How To Install:
 ---------------
