@@ -1,0 +1,5 @@
+include LICENSE
+include README.rst
+recursive-include django_session_controller/static *
+recursive-include django_session_controller/templates *
+recursive-include *.pyc
