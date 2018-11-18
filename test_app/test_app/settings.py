@@ -29,8 +29,16 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 #Restrict sessions
-SESSION_CONTROL_APP_LEVEL = True
-MAX_SESSION_CNT = 2
+SESSION_CONTROL_CONFIG = {
+    'SESSION_CONTROL_APP_LEVEL': True,
+    'MAX_SESSION_CNT' : 2,
+
+    # to control no of sessions for each user
+    'SESSION_CONTROL_USER_LEVEL': True,
+
+    #control session at View level
+    'SESSION_CONTROL_VIEW_LEVEL': True
+}
 
 # Application definition
 
@@ -50,9 +58,9 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'session_controller.middleware.SessionController',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'session_controller.middleware.SessionController'
 ]
 
 ROOT_URLCONF = 'test_app.urls'
