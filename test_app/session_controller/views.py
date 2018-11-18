@@ -4,8 +4,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import TemplateView,CreateView,ListView,DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import UserSessionStore
-from .session_decorators import unique_session
+from django_session_controller.models import UserSessionStore
+from django_session_controller.session_decorators import unique_session
 from django.views import View
 from django.contrib.auth.decorators import login_required
 
