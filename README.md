@@ -13,7 +13,7 @@ Features:
 
 How To Install:
 ===============================
-To install django-session-controller, simply use pip :
+To install **django-session-controller** simply use pip :
 
 ``` {.sourceCode .bash}
 $ pip install django-session-controller
@@ -21,7 +21,7 @@ $ pip install django-session-controller
 ```
 How to use :
 ==================================
-1. Add django-session-controller to your Django project's settings module:
+1. Add **django-session-controller** to your Django project's settings module:
 
 
 ``` {.sourceCode .py}
@@ -37,7 +37,7 @@ How to use :
         ...
     ]
 ```
-2. Apply the carrot migrations to your project's database:
+2. Apply the **django-session-controller** migrations to your project's database:
 
 ``` {.sourceCode .py}
 
@@ -57,7 +57,7 @@ How to use :
     }
 ```
 
-4.Use "@unique_session" decorator on view method to impose session restriction.
+4.Use **@unique_session** decorator on view method to impose session restriction.
 ``` {.sourceCode .py}
     
     from django_session_controller.session_decorators import unique_session
@@ -66,7 +66,7 @@ How to use :
         def get(self, request, *args, **kwargs):
             pass
 ```
-5.To make you session monitoring system use the model 'UserSessionStore'.
+5.To make you session monitoring system use the model **UserSessionStore**.
 ``` {.sourceCode .py}
 
     from django_session_controller.models import UserSessionStore
